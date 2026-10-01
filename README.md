@@ -6,3 +6,5 @@ I read you
 [![LICENSE](https://img.shields.io/github/license/MagnusM109/devops.svg?style=flat-square)](https://github.com/MagnusM109/devops/blob/master/LICENSE)
 
 [![Releases](https://img.shields.io/github/release/MagnusM109/devops/all.svg?style=flat-square)](https://github.com/MagnusM109/devops/releases)
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/MagnusM109/devops/main.yml)
