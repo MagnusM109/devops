@@ -1,0 +1,24 @@
+@startuml
+class com.napier.devops.App {
+- Connection con
++ {static} void main(String[])
++ Employee getEmployee(int)
++ void displayEmployee(Employee)
++ ArrayList<Employee> getAllSalaries()
++ void printSalaries(ArrayList<Employee>)
++ void connect()
++ void disconnect()
+}
+class com.napier.devops.Employee {
++ int thing
+}
+
+class com.napier.devops.Department{
++ string dept_no
++ string dept_name
++ Employee manager
+}
+
+com.napier.devops.App <|--com.napier.devops.Employee
+
+@enduml
