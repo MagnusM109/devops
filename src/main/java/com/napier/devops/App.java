@@ -19,7 +19,12 @@ public class App
         //Get a list of all employees salaries
         ArrayList<Employee> employees = a.getAllSalaries();
 
-        a.printSalaries(employees);
+        //Print the salary of every employee
+        //a.printSalaries(employees);
+
+        Department dept = a.getDepartment(109);
+
+        System.out.println("The size of getting the salaries by department list is " + a.getSalariesByDepartment(dept).size());
 
         //display results
         a.displayEmployee(emp);
@@ -121,6 +126,7 @@ public class App
         try
         {
             //Create employee list
+            ArrayList<Employee> employees = new ArrayList<>();
 
             // Create an SQL statement
             Statement stmt = con.createStatement();
@@ -147,8 +153,7 @@ public class App
                 emp.salary = rset.getInt("salaries.salary");
                 employees.add(emp);
             }
-            else
-                return null;
+            return employees;
         }
         catch (Exception e)
         {
