@@ -36,7 +36,7 @@ public class Employee
     public String dept_name;
 
     /**
-     * Employee's manager
+     * Employee's manager - For now for simplicity am skipping this
      */
-    public Employee manager;
+    //public Employee manager;
 }
