@@ -292,7 +292,7 @@ public class App
             {
                 // Wait a bit for db to start
                 if (firstTry){
-                    Thread.sleep(3000);
+                    Thread.sleep(30000);
                 }
                 else{
                     Thread.sleep(30000);
